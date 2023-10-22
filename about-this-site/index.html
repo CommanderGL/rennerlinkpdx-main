@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>About this Website - Renner Link</title>
+  <link href="https://architecture.rennerlinkpdx.repl.co/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      console.log("loading service worker...");
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
+</head>
+
+<body>
+
+  <button class="backbtn" onclick="window.history.back()">Back</button>
+
+  <div class="loader"></div>
+  
+  <section>
+    <h2>About the Website</h2>
+    <p>This website is hosted on Replit free software and was coded entirely from scratch by the creator (me). Using raw code, versus a template or web design service, allowed me freedom and control of both the site’s design and functionality. With 13 separate linked web pages, this is by far the biggest coding project I have ever completed, and it took a lot of trial-n-error to achieve the final design.</p><br><p>Below is a screenshot of me creating this very page in Replit:</p>
+    <div class="imagerow">
+      <img src="images/abs1.png">
+    </div>
+  </section>
+  <script src="https://architecture.rennerlinkpdx.repl.co/script.js"></script>
+</body>
+
+</html>

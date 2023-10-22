@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Renner Link</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/dc1447e003.js" crossorigin="anonymous"></script>
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      console.log("loading service worker...");
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="loader"></div>
+
+  <header>
+    <a href="https://main.rennerlinkpdx.repl.co/">
+      <img class="logo" src="brand-assets/logo.png" alt="Logo failed to load">
+    </a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="https://architecture.rennerlinkpdx.repl.co">Architecture</a></li>
+        <li><a href="https://engineering.rennerlinkpdx.repl.co">Engineering</a></li>
+        <li><a href="https://photography.rennerlinkpdx.repl.co">Photography</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="https://main.rennerlinkpdx.repl.co/#contact"><button class="contact">Contact</button></a>
+  </header>
+  <!--<div class="banner" id="parallax">
+    <div class="bannertext">
+        <p>Creator</p>
+        <h1>Hi, I'm Renner<br>From Portland, OR</h1>
+    </div>
+  </div>-->
+
+  <!-- -------------Portfolio-------------- -->
+  <!-- Code in this section was directly inspired by and mostly created by Curtis Lee -->
+  <div class="container">
+    <h1 class="subtitlecenter">Portfolios</h1><br><br>
+    <div class="grid">
+      <div class="griditem">
+        <div class="card">
+          <img class="cardimg" src="portfolio-thumbnails/IMG_2299.PNG">
+          <div class="cardcontent">
+            <h1 class="cardheader">Architecture</h1>
+            <p class="cardtext">View my Architecture related projects and builds</p>
+            <a href="https://architecture.rennerlinkpdx.repl.co"><button class="cardbtn">Explore <span>&rarr;</span></button></a>
+          </div>
+        </div>
+      </div>
+      <div class="griditem">
+        <div class="card">
+          <img class="cardimg" src="portfolio-thumbnails/engineeringthumbnail.jpg">
+          <div class="cardcontent">
+            <h1 class="cardheader">Engineering</h1>
+            <p class="cardtext">Learn about the robots and machines that I have designed and built</p>
+            <a href="https://engineering.rennerlinkpdx.repl.co"><button class="cardbtn">Explore <span>&rarr;</span></button></a>
+          </div>
+        </div>
+      </div>
+      <div class="griditem">
+        <div class="card">
+          <img class="cardimg" src="portfolio-thumbnails/photographythumbnail.jpg">
+          <div class="cardcontent">
+            <h1 class="cardheader">Photography</h1>
+            <p class="cardtext">View samples of my landscape photography</p>
+            <a href="https://photography.rennerlinkpdx.repl.co"><button class="cardbtn">Explore <span>&rarr;</span></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------about----------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="aboutcol1">
+          <img src="brand-assets/aboutportrait.jpg">
+        </div>
+        <div class="aboutcol2">
+          <h1 class="subtitle">About Me</h1>
+          <p>I am currently a senior in high school near Portland, Oregon.  I have always been a builder, visualizing projects in 3D and then making them come to life with blocks or LEGO® products.  Along with my own creations, I've always had a fascination with building design and enjoy exploring and photographing the urban Portland landscape.  In 2023, I was able to participate in the ACE Mentorship Program and take a course in engineering and design.  This opened my eyes to a career in architecture. 
+ When I am not building new creations or documenting my builds for my Youtube channel, I am exploring Portland on my bike or playing soccer.</p>
+
+          <div class="tabtitles">
+            <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+            <p class="tablinks" onclick="opentab('experience')">Experience</p>
+            <!--<p class="tablinks" onclick="opentab('hobbies')">Hobbies</p>-->
+          </div>
+          <div class="tabcontents activetab" id="skills">
+            <ul>
+              <li><span>Visual Design</span><br>Websites, Infographics, Videos, Slideshows</li>
+              <li><span>Visual Conception</span><br>I can easily think up objects or entire environments in 3D</li>
+              <li><span>Problem Solving</span><br>Finding creative solutions to everyday problems</li>
+            </ul>
+          </div>
+          <div class="tabcontents" id="experience">
+            <ul>
+              <li><span>2023</span><br>ACE Mentorship</li>
+              <li><span>Spring 2022</span><br>OSRO Soccer Referee</li>
+              <li><span>Summer 2020</span><br>Started a neighborhood bottle recycling service with a friend</li>
+            </ul>
+          </div>
+          <!--<div class="tabcontents" id="hobbies">
+            <ul>
+              <li><span>Custom Lego Builds</span><br>Been building since age 7.</li>
+              <li><span>Content Creation</span><br>Bringing together a community on Youtube since 2017.</li>
+              <li><span>Soccer</span><br>In games and in practice.</li>
+              <li><span>Cycling</span><br>Long rides around Portland and the metro area.</li>
+            </ul>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------Disclaimer-------------->
+  <!--<div class="disclaimer">
+    <h2><i class="fa-solid fa-triangle-exclamation"></i>Disclaimer</h2>
+    <p>All web pages that include rennerlinkpdx.repl.co accessible from this page through links, were created by Renner Link.  This website was created using raw Html, Css, and Javascript code.  Over 12,345 lines of code were written to create this website from scratch.  The budget for this website was $0!  <a href="/about-this-site">Click here to learn more about how I programmed this website.</a></p>
+  </div>-->
+
+  <!-- -----------contact------------ -->
+  <br><br><br>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contactleft">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> rennerlinkpdx@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> (971) 990-5968</p>
+          <p><i class="fa-solid fa-circle-info"></i> Curious about how I developed this website? <a href="/about-this-site" class="hl">Click here</a>.</p>
+          <!--<br><br><a href="images/RennerLinkResume_2023.pdf" download class="cardbtn">Download CV</a>-->
+        </div>
+        <div class="contactright">
+          <form class="contact-form">
+            <!-- <input type="text" name="Name" placeholder="Your Name" required> -->
+            <input type="text" name="Subject" class="contact-subject" placeholder="Your Subject">
+            <textarea name="Message" class="contact-message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cardbtn contact-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br><br>
+
+  <div class="footerdisclaimer">
+    <p>LEGO® is a trademark of the LEGO Group, which does not sponsor, authorize, or endorse
+    this website. Renner Link is not affiliated with the LEGO Group.</p>
+  </div>
+  
+  <script src="script.js"></script>
+  <script>
+  /* const scriptURL = 'https://script.google.com/macros/s/AKfycbxzkMjFKEBhduEy_q6PNM_c3AZU5ELwqjyVGXoLIdJLAPEWKThc6L1q5EBf4GgIC4ZW7Q/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  }) */
+  </script>
+</body>
+
+</html>
